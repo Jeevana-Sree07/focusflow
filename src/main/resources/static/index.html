@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FocusFlow</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+  <h1>FocusFlow</h1>
+  <div class="icons">
+    <span title="Settings">⚙️</span>
+    <span title="Profile">👤</span>
+  </div>
+</header>
+
+<main id="home">
+  <div class="greeting">
+    <h2>👋 Good Morning, Jeevana!</h2>
+    <p class="coach"><strong>Your AI Coach says:</strong> "Today is a great day to finish your Java project."</p>
+  </div>
+
+  <div style="padding: 26px 0 0;">
+    <div class="grid">
+      <button class="card" data-target="page-tasks">
+        <span class="icon">📋</span>
+        <span class="title">Today's Tasks</span>
+        <span class="sub">Manage Tasks</span>
+      </button>
+      <button class="card" data-target="page-planner">
+        <span class="icon">🤖</span>
+        <span class="title">AI Planner</span>
+        <span class="sub">Smart Schedule</span>
+      </button>
+      <button class="card" data-target="page-productivity">
+        <span class="icon">📈</span>
+        <span class="title">Productivity</span>
+        <span class="sub">View Progress</span>
+      </button>
+      <button class="card" data-target="page-pomodoro">
+        <span class="icon">🍅</span>
+        <span class="title">Pomodoro</span>
+        <span class="sub">Focus Timer</span>
+      </button>
+    </div>
+  </div>
+</main>
+
+<!-- ---------- Detail pages ---------- -->
+<section class="page" id="page-tasks">
+  <h2>Today's Tasks</h2>
+  <div class="add-new" id="add-new-link">+ Add New Task</div>
+  <hr>
+  <ul class="task-list" id="task-list"></ul>
+  <hr>
+  <div class="action-row">
+    <button id="btn-add">Add</button>
+    <button id="btn-edit">Edit</button>
+    <button id="btn-delete">Delete</button>
+    <button data-back>Back</button>
+  </div>
+</section>
+
+<section class="page" id="page-planner">
+  <h2>AI Planner</h2>
+  <p class="sub">Smart Schedule for Today</p>
+  <hr>
+  <ol class="timeline" id="timeline"></ol>
+  <hr>
+  <div class="action-row">
+    <button id="regen-plan">Regenerate</button>
+    <button data-back>Back</button>
+  </div>
+</section>
+
+<section class="page" id="page-productivity">
+  <h2>Productivity</h2>
+  <p class="sub">Your Progress This Week</p>
+  <hr>
+  <div class="stat-row">
+    <div class="stat-box"><span class="stat-num" id="stat-completed">0</span><span class="stat-label">Tasks Completed</span></div>
+    <div class="stat-box"><span class="stat-num" id="stat-focus">0</span><span class="stat-label">Focus Sessions</span></div>
+    <div class="stat-box"><span class="stat-num" id="stat-streak">0</span><span class="stat-label">Day Streak</span></div>
+  </div>
+  <div class="bars" id="bars"></div>
+  <hr>
+  <div class="action-row">
+    <button data-back>Back</button>
+  </div>
+</section>
+
+<section class="page" id="page-pomodoro">
+  <h2>Pomodoro</h2>
+  <p class="sub">Focus Timer</p>
+  <hr>
+  <div class="timer-box">
+    <div id="timer-mode">Focus</div>
+    <div class="timer-time" id="timer-display">25:00</div>
+  </div>
+  <hr>
+  <div class="action-row">
+    <button id="timer-reset">Reset</button>
+    <button id="timer-toggle">Start</button>
+    <button id="timer-skip">Skip</button>
+    <button data-back>Back</button>
+  </div>
+  <p class="timer-sessions">Sessions completed today: <span id="session-count">0</span></p>
+</section>
+
+<footer>© FocusFlow</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

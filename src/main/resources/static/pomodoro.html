@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pomodoro — FocusFlow</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+  <h1>FocusFlow</h1>
+  <a class="back-link" href="index.html">← Back</a>
+</header>
+
+<main class="detail">
+  <h2>Pomodoro</h2>
+  <p class="sub">Focus Timer</p>
+  <hr>
+  <div class="timer-box">
+    <div id="timer-mode">Focus</div>
+    <div class="timer-time" id="timer-display">25:00</div>
+  </div>
+  <hr>
+  <div class="action-row">
+    <button id="timer-reset">Reset</button>
+    <button id="timer-toggle">Start</button>
+    <button id="timer-skip">Skip</button>
+    <a href="index.html"><button type="button">Back</button></a>
+  </div>
+  <p class="timer-sessions">Sessions completed today: <span id="session-count">0</span></p>
+</main>
+
+<footer>© FocusFlow</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

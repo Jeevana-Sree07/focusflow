@@ -1,19 +1,27 @@
 console.log("Pomodoro JS Loaded");
-let completedSessions =
-Number(localStorage.getItem("pomodoroSessions")) || 0;
-let minutes = 0;
-let seconds = 5;
+
+// Load completed sessions
+let completedSessions = Number(localStorage.getItem("pomodoroSessions")) || 0;
+
+// Display completed sessions when page loads
+document.getElementById("sessionCount").textContent = completedSessions;
+
+// Timer values
+let minutes = 25;
+let seconds = 0;
 
 let timer = null;
 
+// Update timer display
 function updateDisplay() {
 
     let m = minutes < 10 ? "0" + minutes : minutes;
     let s = seconds < 10 ? "0" + seconds : seconds;
 
-    document.getElementById("time").innerHTML = m + ":" + s;
+    document.getElementById("time").textContent = m + ":" + s;
 }
 
+// Start Timer
 function startTimer() {
 
     if (timer) return;
@@ -22,25 +30,29 @@ function startTimer() {
 
         if (seconds === 0) {
 
-            if(minutes==0){
+            if (minutes === 0) {
 
-    clearInterval(timer);
+                clearInterval(timer);
+                timer = null;
 
-    timer=null;
+                // Increase completed sessions
+                completedSessions++;
 
-    completedSessions++;
+                // Save in localStorage
+                localStorage.setItem("pomodoroSessions", completedSessions);
 
-    localStorage.setItem(
-        "pomodoroSessions",
-        completedSessions
-    );
-    console.log("Timer Finished");
-    
-    alert("Pomodoro Session Completed!");
+                // Update session count on page
+                document.getElementById("sessionCount").textContent = completedSessions;
 
-    return;
+                alert("Pomodoro Session Completed!");
 
-}
+                // Reset timer automatically
+                minutes = 25;
+                seconds = 0;
+                updateDisplay();
+
+                return;
+            }
 
             minutes--;
             seconds = 59;
@@ -53,22 +65,21 @@ function startTimer() {
 
         updateDisplay();
 
-    },1000);
-
+    }, 1000);
 }
 
+// Pause Timer
 function pauseTimer() {
 
     clearInterval(timer);
-
     timer = null;
 
 }
 
+// Reset Timer
 function resetTimer() {
 
     clearInterval(timer);
-
     timer = null;
 
     minutes = 25;
@@ -78,4 +89,5 @@ function resetTimer() {
 
 }
 
+// Initial display
 updateDisplay();

@@ -5,7 +5,7 @@
 }
 
 body{
-    background:white;
+    background:rgb(246, 217, 139);
     font-family:Georgia,"Times New Roman",serif;
     color:#222;
 }
@@ -13,24 +13,17 @@ body{
 /* Main Border */
 
 .page{
-
     width:90%;
-
     height:95vh;
-
     margin:20px auto;
-
     border:2px solid #222;
-
     border-radius:12px;
-
     display:flex;
-
     flex-direction:column;
-
     overflow:hidden;
+    background:white;
+    padding-bottom:20px;   /* Add this */
 }
-
 /* Header */
 
 header{
@@ -66,16 +59,12 @@ header a:hover{
 /* Main */
 
 main{
-
     flex:1;
-
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:center;
+    padding:20px 40px;     /* Added */
 }
 
 /* Title */
@@ -100,6 +89,7 @@ main{
     padding:40px;
 
     text-align:center;
+      margin-bottom:30px; 
 }
 
 #time{
@@ -143,12 +133,19 @@ main{
 /* Footer */
 
 footer{
-
     border-top:2px solid #222;
-
     text-align:center;
-
-    padding:18px;
-
+    padding:20px;
     color:#666;
+    margin-top:10px;
+}
+.sessions{
+    width:500px;
+    border:2px solid #222;
+    border-radius:8px;
+    padding:15px 20px;
+    margin-bottom:20px;
+    font-size:22px;
+    text-align:center;
+    background:#fafafa;
 }

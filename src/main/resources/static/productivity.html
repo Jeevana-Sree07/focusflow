@@ -6,6 +6,7 @@
 <title>Productivity - FocusFlow</title>
 
 <link rel="stylesheet" href="productivity.css">
+
 </head>
 
 <body>
@@ -26,22 +27,25 @@
             <div class="stat-box">
                 <h3>Today's Progress</h3>
                 <p>
-                 Completed :
-                 <strong id="completedTasks">0 / 4 Tasks</strong>
+                    Completed :
+                    <strong id="completedTasks">0 / 4 Tasks</strong>
                 </p>
             </div>
 
             <div class="stat-box">
                 <h3>Focus Time</h3>
-                <p id="focusTime">
-                   0m
-                </p>
+                <p id="focusTime">0m</p>
             </div>
 
             <div class="stat-box">
                 <h3>Productivity Score</h3>
-                <p class="score" id="score">
-                       0%
+                <p class="score" id="score">0%</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Pomodoro Sessions</h3>
+                <p>
+                    <span id="sessionCount">0</span> Sessions
                 </p>
             </div>
 
@@ -54,7 +58,9 @@
 
         <div class="buttons">
 
-            <button>Refresh</button>
+            <button onclick="location.reload()">
+                Refresh
+            </button>
 
             <button onclick="window.location.href='index.html'">
                 Back
@@ -69,15 +75,8 @@
     </footer>
 
 </div>
-<div class="stat-box">
 
-<h3>Pomodoro Sessions</h3>
-
-<p id="sessionCount">
-0 Sessions
-</p>
-
-</div>
 <script src="productivity.js"></script>
+
 </body>
 </html>

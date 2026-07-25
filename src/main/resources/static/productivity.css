@@ -1,133 +1,190 @@
+/* =================== Reset =================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* =================== Body =================== */
+
 body{
-    background:#f3f2f2;
+    background:#e6d6f0;
     font-family:Georgia,"Times New Roman",serif;
     color:#222;
+    height:100vh;
+    overflow:hidden;
 }
 
-/* Main Border */
+/* =================== Page =================== */
 
 .page{
     width:90%;
     height:95vh;
     margin:20px auto;
+    background:#fff;
     border:2px solid #222;
     border-radius:12px;
     display:flex;
     flex-direction:column;
-    overflow:hidden;
 }
 
-/* Header */
+/* =================== Header =================== */
 
 header{
+    position:relative;
     text-align:center;
-    padding:25px;
+    padding:15px;
     border-bottom:2px solid #222;
+    flex-shrink:0;
 }
 
 header h1{
-    font-size:60px;
-    margin-bottom:10px;
+    font-size:38px;
 }
 
 header a{
+    position:absolute;
+    left:25px;
+    top:22px;
     text-decoration:none;
     color:#222;
-    font-size:20px;
+    font-size:18px;
 }
 
 header a:hover{
     text-decoration:underline;
 }
 
-/* Main */
+/* =================== Main =================== */
 
 main{
     flex:1;
-    padding:30px 60px;
-}
-
-/* Title */
-
-.page-title{
-    text-align:center;
-    font-size:54px;
-    margin-bottom:45px;
-}
-
-/* Stats */
-
-.stats{
-    width:500px;
     display:flex;
     flex-direction:column;
-    gap:25px;
+    align-items:center;
+    justify-content:flex-start;
+    padding:15px 20px 30px 20px;   /* Bottom padding added */
+}
+
+/* =================== Title =================== */
+
+.page-title{
+    font-size:32px;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+/* =================== Statistics =================== */
+
+.stats{
+    width:360px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-bottom:15px;            /* Bottom space added */
 }
 
 .stat-box{
     border:2px solid #222;
     border-radius:8px;
-    padding:20px;
+    padding:10px 15px;             /* Reduced padding */
+    background:#fff;
 }
 
 .stat-box h3{
-    font-size:28px;
-    margin-bottom:10px;
+    font-size:20px;
+    margin-bottom:6px;
+}
+
+.stat-box h4{
+    font-size:17px;
+    margin-top:10px;
+    margin-bottom:5px;
 }
 
 .stat-box p{
-    font-size:24px;
+    font-size:17px;
+    font-family:Arial,sans-serif;
+    line-height:1.4;
 }
 
 .score{
     color:green;
+    font-size:26px;
     font-weight:bold;
-    font-size:34px;
 }
 
-/* Buttons */
+/* =================== Buttons =================== */
 
 .buttons{
-    margin-top:40px;
+    margin-top:15px;
+    margin-bottom:15px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
 }
 
 .buttons button{
-
-    padding:12px 28px;
-
-    font-size:22px;
-
-    margin-right:18px;
-
+    padding:9px 20px;
+    font-size:16px;
     border:2px solid #222;
-
     border-radius:8px;
-
     background:white;
-
     cursor:pointer;
+    transition:0.3s;
 }
 
 .buttons button:hover{
-
     background:#d06565;
+    color:white;
 }
 
-/* Footer */
+/* =================== Footer =================== */
 
 footer{
-
     border-top:2px solid #222;
-
     text-align:center;
-
-    padding:18px;
-
+    padding:16px;                  /* Increased footer padding */
     color:#666;
+    font-size:14px;
+    flex-shrink:0;
+}
+
+/* =================== Responsive =================== */
+
+@media (max-width:768px){
+
+    .page{
+        width:96%;
+        height:96vh;
+        margin:10px auto;
+    }
+
+    header h1{
+        font-size:30px;
+    }
+
+    header a{
+        left:15px;
+        top:18px;
+        font-size:16px;
+    }
+
+    .page-title{
+        font-size:26px;
+    }
+
+    .stats{
+        width:90%;
+    }
+
+    .buttons{
+        flex-direction:column;
+        width:220px;
+    }
+
+    .buttons button{
+        width:100%;
+    }
 }

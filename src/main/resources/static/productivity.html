@@ -25,17 +25,24 @@
 
             <div class="stat-box">
                 <h3>Today's Progress</h3>
-                <p>✔ Completed : <strong>2 / 4 Tasks</strong></p>
+                <p>
+                 Completed :
+                 <strong id="completedTasks">0 / 4 Tasks</strong>
+                </p>
             </div>
 
             <div class="stat-box">
                 <h3>Focus Time</h3>
-                <p>🍅 2h 15m</p>
+                <p id="focusTime">
+                   0m
+                </p>
             </div>
 
             <div class="stat-box">
                 <h3>Productivity Score</h3>
-                <p class="score">82%</p>
+                <p class="score" id="score">
+                       0%
+                </p>
             </div>
 
             <div class="stat-box">
@@ -62,6 +69,15 @@
     </footer>
 
 </div>
+<div class="stat-box">
 
+<h3>Pomodoro Sessions</h3>
+
+<p id="sessionCount">
+0 Sessions
+</p>
+
+</div>
+<script src="productivity.js"></script>
 </body>
 </html>

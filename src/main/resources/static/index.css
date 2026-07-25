@@ -6,7 +6,7 @@
 
 body {
     font-family: Georgia, "Times New Roman", serif;
-    background: #fff;
+    background: #f4d288;
     color: #222;
 }
 
@@ -19,7 +19,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: #e18747;
+    
 }
 
 header h1 {
@@ -100,7 +101,7 @@ main {
 }
 
 .card:hover {
-    background: #f5f5f5;
+    background: #f2c06b;
     transform: translateY(-4px);
 }
 

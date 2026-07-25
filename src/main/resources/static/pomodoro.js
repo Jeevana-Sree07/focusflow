@@ -1,5 +1,8 @@
-let minutes = 25;
-let seconds = 0;
+console.log("Pomodoro JS Loaded");
+let completedSessions =
+Number(localStorage.getItem("pomodoroSessions")) || 0;
+let minutes = 0;
+let seconds = 5;
 
 let timer = null;
 
@@ -19,15 +22,25 @@ function startTimer() {
 
         if (seconds === 0) {
 
-            if (minutes === 0) {
+            if(minutes==0){
 
-                clearInterval(timer);
-                timer = null;
+    clearInterval(timer);
 
-                alert("Pomodoro Completed!");
+    timer=null;
 
-                return;
-            }
+    completedSessions++;
+
+    localStorage.setItem(
+        "pomodoroSessions",
+        completedSessions
+    );
+    console.log("Timer Finished");
+    
+    alert("Pomodoro Session Completed!");
+
+    return;
+
+}
 
             minutes--;
             seconds = 59;

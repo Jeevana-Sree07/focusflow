@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FocusFlow</title>
-<link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
-<div class="desk">
+    <!-- Header -->
+    <header>
+        <h1>FocusFlow</h1>
 
-<header>
-  <h1>FocusFlow</h1>
-  <div class="icons">
-    <span title="Settings">⚙️</span>
-    <span title="Profile">👤</span>
-  </div>
-</header>
+        <div class="icons">
+            <span title="Settings">⚙️</span>
+            <span title="Profile">👤</span>
+        </div>
+    </header>
 
-<main>
-  <div class="greeting">
-    <h2>👋 Good Morning, Jeevana!</h2>
-    <p class="coach"><strong>Your AI Coach says:</strong> "Today is a great day to finish your Java project."</p>
-  </div>
+    <!-- Dashboard -->
+    <div class="dashboard-box">
 
-  <div style="padding: 26px 0 0;">
-    <div class="grid">
-      <a class="card" href="tasks.html" target="_blank">
-        <span class="icon">📋</span>
-        <span class="title">Today's Tasks</span>
-        <span class="sub">Manage Tasks</span>
-      </a>
-      <a class="card" href="planner.html" target="_blank">
-        <span class="icon">🤖</span>
-        <span class="title">AI Planner</span>
-        <span class="sub">Smart Schedule</span>
-      </a>
-      <a class="card" href="productivity.html" target="_blank">
-        <span class="icon">📈</span>
-        <span class="title">Productivity</span>
-        <span class="sub">View Progress</span>
-      </a>
-      <a class="card" href="pomodoro.html" target="_blank">
-        <span class="icon">🍅</span>
-        <span class="title">Pomodoro</span>
-        <span class="sub">Focus Timer</span>
-      </a>
+        <!-- Greeting -->
+        <section class="greeting">
+            <h2>👋 Good Morning, Jeevana!</h2>
+
+            <p class="coach">
+                <strong>Your AI Coach says:</strong>
+                "Today is a great day to finish your Java project."
+            </p>
+        </section>
+
+        <!-- Main -->
+        <main>
+
+            <div class="grid">
+
+                <!-- Today's Tasks -->
+                <a class="card" href="tasks.html" target="_blank">
+                    <span class="icon">📋</span>
+                    <span class="title">Today's Tasks</span>
+                    <span class="sub">Manage Tasks</span>
+                </a>
+
+                <!-- AI Planner -->
+                <a class="card" href="planner.html" target="_blank">
+                    <span class="icon">🤖</span>
+                    <span class="title">AI Planner</span>
+                    <span class="sub">Smart Schedule</span>
+                </a>
+
+                <!-- Productivity -->
+                <a class="card" href="productivity.html" target="_blank">
+                    <span class="icon">📈</span>
+                    <span class="title">Productivity</span>
+                    <span class="sub">View Progress</span>
+                </a>
+
+                <!-- Pomodoro -->
+                <a class="card" href="pomodoro.html" target="_blank">
+                    <span class="icon">🍅</span>
+                    <span class="title">Pomodoro</span>
+                    <span class="sub">Focus Timer</span>
+                </a>
+
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            © FocusFlow
+        </footer>
+
     </div>
-  </div>
-</main>
-
-<footer>© FocusFlow</footer>
-
-</div>
 
 </body>
 </html>

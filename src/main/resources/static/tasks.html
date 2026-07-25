@@ -1,34 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Today's Tasks — FocusFlow</title>
-<link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Tasks - FocusFlow</title>
+    <link rel="stylesheet" href="tasks.css">
 </head>
+
 <body>
 
-<header>
-  <h1>FocusFlow</h1>
-  <a class="back-link" href="index.html">← Back</a>
-</header>
+<div class="task-container">
 
-<main class="detail">
-  <h2>Today's Tasks</h2>
-  <div class="add-new" id="add-new-link">+ Add New Task</div>
-  <hr>
-  <ul class="task-list" id="task-list"></ul>
-  <hr>
-  <div class="action-row">
-    <button id="btn-add">Add</button>
-    <button id="btn-edit">Edit</button>
-    <button id="btn-delete">Delete</button>
-    <a href="index.html"><button type="button">Back</button></a>
-  </div>
-</main>
+    <!-- Header -->
+    <header>
+        <h1>FocusFlow</h1>
+        <a href="index.html" class="back-link">← Back</a>
+    </header>
 
-<footer>© FocusFlow</footer>
+    <!-- Main Content -->
+    <main class="task-content">
 
-<script src="index.js"></script>
+        <h2 class="task-title">Today's Tasks</h2>
+
+        <div class="add-task">
+            + Add New Task
+        </div>
+
+        <ul class="task-list">
+
+            <li>
+                <label>
+                    <input type="checkbox">
+                    Java Assignment
+                </label>
+            </li>
+
+            <li>
+                <label>
+                    <input type="checkbox" checked>
+                    DSA Practice
+                </label>
+            </li>
+
+            <li>
+                <label>
+                    <input type="checkbox">
+                    Mini Project
+                </label>
+            </li>
+
+            <li>
+                <label>
+                    <input type="checkbox" checked>
+                    Aptitude Practice
+                </label>
+            </li>
+
+        </ul>
+
+        <div class="buttons">
+
+            <button type="button">Add</button>
+
+            <button type="button">Edit</button>
+
+            <button type="button">Delete</button>
+
+            <a href="index.html">
+                <button type="button">Back</button>
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © FocusFlow
+    </footer>
+
+</div>
+
 </body>
 </html>

@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:white;
+    font-family:Georgia,"Times New Roman",serif;
+    color:#222;
+}
+
+/* Main Border */
+
+.page{
+
+    width:90%;
+
+    height:95vh;
+
+    margin:20px auto;
+
+    border:2px solid #222;
+
+    border-radius:12px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:hidden;
+}
+
+/* Header */
+
+header{
+
+    text-align:center;
+
+    padding:25px;
+
+    border-bottom:2px solid #222;
+}
+
+header h1{
+
+    font-size:60px;
+
+    margin-bottom:10px;
+}
+
+header a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-size:20px;
+}
+
+header a:hover{
+
+    text-decoration:underline;
+}
+
+/* Main */
+
+main{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+/* Title */
+
+.page-title{
+
+    font-size:55px;
+
+    margin-bottom:40px;
+}
+
+/* Timer Box */
+
+.timer-box{
+
+    width:500px;
+
+    border:2px solid #222;
+
+    border-radius:10px;
+
+    padding:40px;
+
+    text-align:center;
+}
+
+#time{
+
+    font-size:90px;
+
+    margin-bottom:20px;
+}
+
+.timer-box p{
+
+    font-size:22px;
+
+    margin-bottom:35px;
+}
+
+/* Buttons */
+
+.buttons button{
+
+    padding:12px 28px;
+
+    font-size:20px;
+
+    margin:8px;
+
+    border:2px solid #222;
+
+    border-radius:8px;
+
+    background:white;
+
+    cursor:pointer;
+}
+
+.buttons button:hover{
+
+    background:#f2f2f2;
+}
+
+/* Footer */
+
+footer{
+
+    border-top:2px solid #222;
+
+    text-align:center;
+
+    padding:18px;
+
+    color:#666;
+}

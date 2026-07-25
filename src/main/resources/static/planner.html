@@ -1,32 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Planner — FocusFlow</title>
-<link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Planner - FocusFlow</title>
+    <link rel="stylesheet" href="planner.css">
 </head>
 <body>
 
-<header>
-  <h1>FocusFlow</h1>
-  <a class="back-link" href="index.html">← Back</a>
-</header>
+<div class="planner-container">
 
-<main class="detail">
-  <h2>AI Planner</h2>
-  <p class="sub">Smart Schedule for Today</p>
-  <hr>
-  <ol class="timeline" id="timeline"></ol>
-  <hr>
-  <div class="action-row">
-    <button id="regen-plan">Regenerate</button>
-    <a href="index.html"><button type="button">Back</button></a>
-  </div>
-</main>
+    <header>
+        <h1>FocusFlow</h1>
+        <a href="index.html" class="back-link">← Back</a>
+    </header>
 
-<footer>© FocusFlow</footer>
+    <main class="planner-content">
 
-<script src="index.js"></script>
+        <h2 class="planner-title">AI Planner</h2>
+
+        <p class="planner-sub">
+            Smart Schedule for Today
+        </p>
+
+        <hr>
+
+        <div class="schedule">
+
+            <div class="item">
+                <span class="time">8:00 AM</span>
+                <span class="work">Breakfast</span>
+            </div>
+
+            <div class="item">
+                <span class="time">9:00 AM</span>
+                <span class="work">Java Practice</span>
+            </div>
+
+            <div class="item">
+                <span class="time">11:00 AM</span>
+                <span class="work">College Work</span>
+            </div>
+
+            <div class="item">
+                <span class="time">2:00 PM</span>
+                <span class="work">DSA Practice</span>
+            </div>
+
+            <div class="item">
+                <span class="time">5:00 PM</span>
+                <span class="work">Revision</span>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <button>Regenerate</button>
+            <button onclick="location.href='index.html'">Back</button>
+        </div>
+
+    </main>
+
+    <footer>
+        © FocusFlow
+    </footer>
+
+</div>
+
 </body>
 </html>

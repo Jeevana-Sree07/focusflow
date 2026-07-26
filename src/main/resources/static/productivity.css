@@ -34,7 +34,7 @@ body{
 header{
     position:relative;
     text-align:center;
-    padding:15px;
+    padding:12px;
     border-bottom:2px solid #222;
     flex-shrink:0;
 }
@@ -64,7 +64,7 @@ main{
     flex-direction:column;
     align-items:center;
     justify-content:flex-start;
-    padding:15px 20px 30px 20px;   /* Bottom padding added */
+    padding:15px 20px 30px 20px;  
 }
 
 /* =================== Title =================== */
@@ -145,7 +145,7 @@ main{
 footer{
     border-top:2px solid #222;
     text-align:center;
-    padding:13px;                  
+    padding:12px;                  
     color:#666;
     font-size:14px;
     flex-shrink:0;

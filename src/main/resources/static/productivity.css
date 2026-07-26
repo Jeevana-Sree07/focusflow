@@ -13,7 +13,7 @@ body{
     font-family:Georgia,"Times New Roman",serif;
     color:#222;
     min-height:100vh;
-    overflow:hidden;
+    overflow-y:auto;
 }
 
 /* =================== Page =================== */
@@ -34,13 +34,12 @@ body{
 header{
     position:relative;
     text-align:center;
-    padding:12px;
+    padding:15px;
     border-bottom:2px solid #222;
-    flex-shrink:0;
 }
 
 header h1{
-    font-size:38px;
+    font-size:40px;
 }
 
 header a{
@@ -63,15 +62,14 @@ main{
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:flex-start;
-    padding:15px 20px 30px 20px;  
+    padding:20px 20px 30px;
 }
 
 /* =================== Title =================== */
 
 .page-title{
     font-size:32px;
-    margin-bottom:15px;
+    margin-bottom:20px;
     text-align:center;
 }
 
@@ -81,32 +79,26 @@ main{
     width:360px;
     display:flex;
     flex-direction:column;
-    gap:10px;
-    margin-bottom:15px;            /* Bottom space added */
+    gap:15px;
+    margin-bottom:20px;
 }
 
 .stat-box{
     border:2px solid #222;
     border-radius:8px;
-    padding:10px 15px;             /* Reduced padding */
+    padding:12px 16px;
     background:#fff;
 }
 
 .stat-box h3{
     font-size:20px;
-    margin-bottom:6px;
-}
-
-.stat-box h4{
-    font-size:17px;
-    margin-top:10px;
-    margin-bottom:5px;
+    margin-bottom:8px;
 }
 
 .stat-box p{
     font-size:17px;
     font-family:Arial,sans-serif;
-    line-height:1.4;
+    line-height:1.5;
 }
 
 .score{
@@ -118,15 +110,15 @@ main{
 /* =================== Buttons =================== */
 
 .buttons{
-    margin-top:15px;
-    margin-bottom:15px;
     display:flex;
     justify-content:center;
     gap:15px;
+    margin-top:20px;
+    margin-bottom:25px;
 }
 
 .buttons button{
-    padding:9px 20px;
+    padding:10px 22px;
     font-size:16px;
     border:2px solid #222;
     border-radius:8px;
@@ -145,10 +137,10 @@ main{
 footer{
     border-top:2px solid #222;
     text-align:center;
-    padding:12px;                  
+    padding:15px;
     color:#666;
     font-size:14px;
-    flex-shrink:0;
+    margin-top:auto;
 }
 
 /* =================== Responsive =================== */
@@ -157,7 +149,6 @@ footer{
 
     .page{
         width:96%;
-        height:96vh;
         margin:10px auto;
     }
 
@@ -176,7 +167,7 @@ footer{
     }
 
     .stats{
-        width:90%;
+        width:95%;
     }
 
     .buttons{

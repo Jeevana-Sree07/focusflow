@@ -12,7 +12,7 @@ body{
     background:#e6d6f0;
     font-family:Georgia,"Times New Roman",serif;
     color:#222;
-    height:100vh;
+    min-height:100vh;
     overflow:hidden;
 }
 
@@ -20,7 +20,7 @@ body{
 
 .page{
     width:90%;
-    height:95vh;
+    min-height:95vh;
     margin:20px auto;
     background:#fff;
     border:2px solid #222;

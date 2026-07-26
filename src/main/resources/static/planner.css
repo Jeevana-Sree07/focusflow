@@ -15,7 +15,7 @@ body{
 .planner-container{
     width:92%;
     max-width:1400px;
-    height:calc(100vh - 30px);
+    min-height:calc(100vh - 30px);
     margin:15px auto;
     border:2px solid #222;
     border-radius:10px;
@@ -51,7 +51,7 @@ header h1{
 
 .planner-content{
     flex:1;
-    padding:22px 50px;
+    padding:20px 45px;
 }
 
 .planner-title{
@@ -64,11 +64,11 @@ header h1{
     text-align:center;
     font-size:19px;
     color:#666;
-    margin-bottom:16px;
+    margin-bottom:14px;
 }
 
 hr{
-    margin-bottom:18px;
+    margin-bottom:16px;
 }
 
 .schedule{
@@ -81,8 +81,8 @@ hr{
     justify-content:space-between;
     align-items:center;
     border-bottom:1px solid #ddd;
-    padding:13px 0;
-    font-size:22px;
+    padding:10px 0;
+    font-size:21px;
 }
 
 .time{
@@ -90,12 +90,13 @@ hr{
 }
 
 .buttons{
-    margin-top:22px;
+    margin-top:18px;
+    margin-bottom:10px;
     text-align:center;
 }
 
 .buttons button{
-    padding:9px 20px;
+    padding:8px 18px;
     margin:0 8px;
     font-size:17px;
     border:2px solid #222;

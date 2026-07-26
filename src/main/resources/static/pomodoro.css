@@ -20,7 +20,7 @@ body{
     border-radius:12px;
     display:flex;
     flex-direction:column;
-    overflow:hidden;
+    
     background:white;
     padding-bottom:20px;   /* Add this */
 }

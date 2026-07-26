@@ -145,7 +145,7 @@ main{
 footer{
     border-top:2px solid #222;
     text-align:center;
-    padding:16px;                  /* Increased footer padding */
+    padding:13px;                  
     color:#666;
     font-size:14px;
     flex-shrink:0;

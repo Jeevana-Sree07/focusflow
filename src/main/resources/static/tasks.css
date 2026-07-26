@@ -17,33 +17,32 @@ body{
 .task-container{
     width:92%;
     max-width:1400px;
-    height:95vh;
-    margin:20px auto;
+    min-height:95vh;
+    margin:15px auto;
     border:2px solid #222;
     border-radius:10px;
     background:#fff;
     display:flex;
     flex-direction:column;
-    overflow:hidden;
 }
 
 /* ================= HEADER ================= */
 
 header{
     text-align:center;
-    padding:18px;
+    padding:16px;
     border-bottom:2px solid #222;
 }
 
 header h1{
-    font-size:52px;
-    margin-bottom:8px;
+    font-size:48px;
+    margin-bottom:6px;
 }
 
 .back-link{
     text-decoration:none;
     color:#222;
-    font-size:20px;
+    font-size:19px;
 }
 
 .back-link:hover{
@@ -54,24 +53,24 @@ header h1{
 
 .task-content{
     flex:1;
-    padding:25px 50px;
+    padding:20px 45px;
 }
 
 /* ================= TITLE ================= */
 
 .task-title{
     text-align:center;
-   font-size:34px;
-margin-bottom:25px;
+    font-size:34px;
+    margin-bottom:20px;
 }
 
 /* ================= ADD TASK ================= */
 
 .add-task{
-    font-size:24px;
+    font-size:22px;
     font-weight:bold;
     cursor:pointer;
-    margin-bottom:30px;
+    margin-bottom:22px;
 }
 
 .add-task:hover{
@@ -82,24 +81,37 @@ margin-bottom:25px;
 
 .task-list{
     list-style:none;
-    font-size:30px;
-    line-height:2;
+    font-size:26px;
 }
 
 .task-list li{
-    margin-bottom:12px;
+    margin-bottom:18px;
+}
+
+.task-list input[type="checkbox"]{
+    width:24px;
+    height:24px;
+    margin-right:15px;
+    cursor:pointer;
+}
+
+.task-list label{
+    display:flex;
+    align-items:center;
+    cursor:pointer;
 }
 
 /* ================= BUTTONS ================= */
 
 .buttons{
-    margin-top:40px;
+    margin-top:20px;
+    margin-bottom:10px;
 }
 
 .buttons button{
-    padding:12px 24px;
-    margin-right:15px;
-    font-size:18px;
+    padding:10px 22px;
+    margin-right:12px;
+    font-size:17px;
     border:2px solid #222;
     border-radius:6px;
     background:white;
@@ -115,7 +127,7 @@ margin-bottom:25px;
 footer{
     border-top:2px solid #222;
     text-align:center;
-    padding:18px;
+    padding:12px;
     font-family:Arial,sans-serif;
     font-size:14px;
     color:#666;
@@ -130,40 +142,24 @@ footer{
     }
 
     header h1{
-        font-size:38px;
+        font-size:36px;
     }
 
     .task-title{
-        font-size:30px;
+        font-size:28px;
     }
 
     .task-content{
-        padding:30px;
+        padding:20px;
     }
 
     .task-list{
-        font-size:24px;
+        font-size:22px;
     }
 
     .buttons button{
         display:block;
         width:180px;
-        margin:10px 0;
+        margin:10px auto;
     }
-}
-.task-list input[type="checkbox"]{
-    width:25px;
-    height:25px;
-    margin-right:15px;
-    cursor:pointer;
-}
-
-.task-list label{
-    display:flex;
-    align-items:center;
-    cursor:pointer;
-}
-
-.task-list li{
-    margin-bottom:25px;
 }
